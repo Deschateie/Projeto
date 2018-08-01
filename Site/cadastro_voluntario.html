@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deschateie</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="_css/bulma.css">
+    
+    <link rel="stylesheet" href="_css/estilo.css">
+  </head>
+  <body>
+	<nav>
+		<div class="menu_pattern" id="topo">
+			<div class="container is-widescreen">
+				<div class="tabs is-centered">
+				  <ul>
+				    <li><a href="index.html">Home</a></li>
+				    <li><a href="index.html#quemSomos" class="scrollSuave">Quem Somos</a></li>
+				    <li><a href="login.html">Fazer Login</a></li>
+				    <li><a class="btn_cvs" href="chatbot.html">Conversar</a></li>
+				  </ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<main>
+		<div class="container">
+			<form action="#">
+				<div>
+					<h2 class="has-text-centered has-text-weight-bold">Cadastro de Voluntario</h2>
+					<div class="field">
+						<label class="label">Nome completo:</label>
+						<div class="control">
+							<input class="input" type="text" placeholder="Digite seu nome" required>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">Email:</label>
+						<div class="control has-icons-left">
+							<input class="input" type="text" placeholder="Digite seu email" required>
+							<span class="icon is-small is-left">
+								<i class="fas fa-envelope"></i>
+							</span>
+						</div>
+					</div>
+					<div class="field">
+						<div class="group_input">
+							<label class="label">RG:</label>
+							<div class="control">
+								<input class="input" type="text" id="rg" required>
+							</div>
+						</div>
+						<div class="group_input">
+							<label class="label rigth">CPF:</label>
+							<div class="control">
+								<input class="input right" type="text" id="cpf" required>
+							</div>
+						</div>
+					</div>
+					<div class="field">
+						<div class="group_input">
+							<label class="label">Curso:</label>
+							<div class="control">
+								<input class="input" type="text" required>
+							</div>
+						</div>
+						<div class="group_input">
+							<label class="label rigth">Data:</label>
+							<div class="control">
+								<input class="input rigth" type="date" required>
+							</div>
+						</div>
+					</div>
+					<div class="field">
+						<div class="control">
+							<label class="label">Descrição:</label>
+						  <textarea class="textarea" type="text" placeholder="Descreva por que você deseja ser vonluntário" required></textarea>
+						</div>
+					</div>
+					<div class="field">
+						<button class="button is-success is-fullwidth" type="submit">Salvar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</main>
+	<footer>
+		<div class="footer">
+			<div class="container">
+				<div class="network">
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-facebook-messenger"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
+				<div class="footer-menu">
+					<a href="catalago.html">Catalagos</a>
+					<a href="mapa.html">Mapa</a>
+					<a href="cadastro-usuario.html">Cadastra-se</a>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>&copy; Todos dirietos reservados</p>
+		</div>
+		<div class="go_top">
+			<a href="#topo" class="go_top_menu">Topo</a>
+		</div>
+	</footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<script>
+		var $doc = $('html, body');
+		$('.scrollSuave').click(function() {
+		    $doc.animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		    return false;
+		});
+		$('.go_top_menu').click(function() {
+		    $doc.animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		    return false;
+		});
+		/* VALIDAÇÃO FORMULARIO */
+		$(document).ready(function(){
+			$('#cpf').mask('000.000.000-00', {reverse: true});
+			$('#rg').mask('000.000.000-A', {reverse: true});
+		});
+	</script>
+	<script src="_js/jquery.mask.js"></script>
+  </body>
+</html>

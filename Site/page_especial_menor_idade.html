@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deschateie</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="_css/bulma.css">
+    <link rel="stylesheet" href="_css/estilo.css">
+  </head>
+  <body>
+	<nav>
+		<div class="menu_pattern" id="topo">
+			<div class="container is-widescreen">
+				<div class="tabs is-centered">
+				  <ul>
+				    <li><a href="index.html">Home</a></li>
+				    <li><a href="index.html#quemSomos" class="scrollSuave">Quem Somos</a></li>
+				    <li><a href="login.html">Fazer Login</a></li>
+				    <li><a class="btn_cvs" href="chatbot.html">Conversar</a></li>
+				  </ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<main>
+		<div class="container">
+			<h2 class="title_content">Seja bem vindo.</h2>
+			<div class="right_content">
+				<iframe class="media_video" src="https://www.youtube.com/embed/JEbqcLe2s9E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<div class="main_text_content">
+					<h3>[ Title article ]</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis nostrum ea enim maxime! Eius modi at maxime mollitia nisi eaque, accusamus ipsam voluptatum tempore ut? Quisquam harum repellendus iusto eveniet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, itaque error explicabo molestias libero corrupti officiis nobis nisi sequi, illum iusto doloribus ex, ad voluptatibus accusamus totam incidunt repudiandae adipisci.</p>
+				</div>
+			</div>
+			<div class="left_content">
+				<div class="main_text_content">
+					<h3>[ Title article ]</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis nostrum ea enim maxime! Eius modi at maxime mollitia nisi eaque, accusamus ipsam voluptatum tempore ut? Quisquam harum repellendus iusto eveniet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, itaque error explicabo molestias libero corrupti officiis nobis nisi sequi, illum iusto doloribus ex, ad voluptatibus accusamus totam incidunt repudiandae adipisci.</p>
+				</div>
+			</div>
+			<div class="content_bottom">
+				<div class="article_content">
+					<h2>[ Title ]</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint voluptatibus impedit, odio ipsum porro deserunt incidunt, amet facere nam fugit, assumenda placeat libero at, molestias praesentium soluta enim officia corporis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti iste labore? Ea assumenda maiores dolorum debitis quam, nisi, sed ipsam vero aliquid, possimus iusto fuga reprehenderit repellendus facere aliquam.</p>
+				</div>
+				<div class="link_content">
+						<ul>
+						<li><label class="label">CFP: </label> <a href="https://site.cfp.org.br/">https://site.cfp.org.br/</a></li>
+						<li><label class="label">CFP: </label> [ Link ]</li>
+						<li><label class="label">CFP: </label> [ Link ]</li>
+						<li><label class="label">CFP: </label> [ Link ]</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer">
+			<div class="container">
+				<div class="network">
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-facebook-messenger"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
+				<div class="footer-menu">
+					<a href="catalago.html">Catalagos</a>
+					<a href="mapa.html">Mapa</a>
+					<a href="cadastro-usuario.html">Cadastra-se</a>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>&copy; Todos dirietos reservados</p>
+		</div>
+		<div class="go_top">
+			<a href="#topo" class="go_top_menu">Topo</a>
+		</div>
+	</footer>
+
+	<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script>
+		var $doc = $('html, body');
+		$('.scrollSuave').click(function() {
+		    $doc.animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		    return false;
+		});
+		$('.go_top_menu').click(function() {
+		    $doc.animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		    return false;
+		});
+	</script>
+  </body>
+</html>

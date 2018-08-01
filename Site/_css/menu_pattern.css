@@ -1,0 +1,14 @@
+/* Menu padrão de todas as outras page */
+.menu_pattern {
+  color: #000;
+  padding: 80px 0px;
+  height: 150px;
+  background-color: #fff;
+}
+.menu_pattern .container .tabs ul li a{
+  color: black;
+}
+
+.menu_pattern .container .tabs ul li a.btn_cvs{
+	color: #fff;
+}

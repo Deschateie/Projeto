@@ -1,0 +1,25 @@
+.conversar button {
+	padding: 10px;
+	border-radius: 3px;
+	background: #37B686;
+	color: white;
+	font-family: verdana;	
+	outline: none;
+}
+
+.main-container{
+	display: flex;
+	margin-bottom: 5%;
+}
+
+.conversas{
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.box{
+  flex: 0 0 30%;
+}
+
