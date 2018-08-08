@@ -95,27 +95,8 @@
 
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script>
-		var $doc = $('html, body');
-		$('.scrollSuave').click(function() {
-		    $doc.animate({
-		        scrollTop: $( $.attr(this, 'href') ).offset().top
-		    }, 500);
-		    return false;
-		});
-		$('.go_top_menu').click(function() {
-		    $doc.animate({
-		        scrollTop: $( $.attr(this, 'href') ).offset().top
-		    }, 500);
-		    return false;
-		});
-
-		/* VALIDAÇÃO FORMULARIO */
-		$(document).ready(function(){
-			$('#cep').mask('00000-000');
-			$('#cpf').mask('000.000.000-00', {reverse: true});
-		});
-	</script>
 	<script src="_js/jquery.mask.js"></script>
+	<script src="_js/script.js"></script>
+	<script src="_js/validaForm.js"></script>
   </body>
 </html>

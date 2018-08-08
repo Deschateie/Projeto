@@ -58,11 +58,11 @@
 			    <div class="numbertext">2 / 4</div>
 			    <div class="block-content">
 			    	<div class="text_content">
-			    		<h2>Faça parte da nossa tripulação de voluntários.</h2>
-			    		<div class="action_perfomance">
-		    				<a href="cadastro_voluntario.html"><button >Cadastrar</button></a>
-		    			</div>
-			    	</div>
+		    			<h2>Faça parte da nossa tripulação de voluntários.</h2>
+		    		</div>
+		    		<div class="action_perfomance">
+	    				<a href="cadastro_voluntario.html"><button >Cadastrar</button></a>
+	    			</div>
 			    </div>
 			    <div class="text">Cadastro de voluntario.</div>
 			  </div>
@@ -72,10 +72,10 @@
 			   <div class="block-content">
 			    	<div class="text_content">
 			    		<h2>Seja o nosso parceiro!</h2>
-			    		<div class="action_perfomance">
-		    				<a href="cadastro_psicologo.html"><button >Cadastrar</button></a>
-		    			</div>
 			    	</div>
+		    		<div class="action_perfomance">
+	    				<a href="cadastro_psicologo.html"><button >Cadastrar</button></a>
+	    			</div>
 			    </div>
 			    <div class="text">Cadastro de psicologo</div>
 			  </div>
@@ -85,10 +85,10 @@
 		  	   <div class="block-content">
 		  	    	<div class="text_content">
 		  	    		<h2>Menor de 18 anos?, não se preocupe poderá usar nossa plataforma tranquilamente.</h2>
-		  	    		<div class="action_perfomance">
-		      				<a href="page_especial_menor_idade.html"><button >Saiba mais!</button></a>
-		      			</div>
 		  	    	</div>
+	  	    		<div class="action_perfomance">
+	      				<a href="page_especial_menor_idade.html"><button >Saiba mais!</button></a>
+	      			</div>
 		  	    </div>
 		  	    <div class="text">Ajuda aos menores de idade</div>
 		  	  </div>
@@ -100,7 +100,7 @@
 			<br>
 
 			<!-- The dots/circles -->
-			<div style="text-align:center">
+			<div class="controls-slider">
 			  <span class="dot" onclick="currentSlide(1)"></span> 
 			  <span class="dot" onclick="currentSlide(2)"></span> 
 			  <span class="dot" onclick="currentSlide(3)"></span> 
@@ -123,8 +123,8 @@
 		</div>
 	</main>
 	<footer>
-		<div class="footer">
-			<div class="container">
+		<div class="container">
+			<div class="footer">
 				<div class="network">
 					<a href="#"><i class="fab fa-instagram"></i></a>
 					<a href="#"><i class="fab fa-facebook-messenger"></i></a>
@@ -148,51 +148,7 @@
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-	<script>
-		var $doc = $('html, body');
-		$('.scrollSuave').click(function() {
-		    $doc.animate({
-		        scrollTop: $( $.attr(this, 'href') ).offset().top
-		    }, 500);
-		    return false;
-		});
-		$('.go_top_menu').click(function() {
-		    $doc.animate({
-		        scrollTop: $( $.attr(this, 'href') ).offset().top
-		    }, 500);
-		    return false;
-		});
-
-		var slideIndex = 1;
-		showSlides(slideIndex);
-
-		// Next/previous controls
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
-
-		// Thumbnail image controls
-		function currentSlide(n) {
-		  	showSlides(slideIndex = n);
-		}
-
-		function showSlides(n) {
-		  	var i;
-		 	var slides = document.getElementsByClassName("mySlides");
-		  	var dots = document.getElementsByClassName("dot");
-		  	if (n > slides.length) {slideIndex = 1} 
-		  	if (n < 1) {slideIndex = slides.length}
-		  	for (i = 0; i < slides.length; i++) {
-		    	slides[i].style.display = "none"; 
-		  	}
-		  	for (i = 0; i < dots.length; i++) {
-		    	dots[i].className = dots[i].className.replace(" active", "");
-		  	}
-		  	slides[slideIndex-1].style.display = "block"; 
-		  	dots[slideIndex-1].className += " active";
-
-
-		}
-	</script>
+	<script src="_js/script.js"></script>
+	<script src="_js/carousel.js"></script>
   </body>
 </html>
