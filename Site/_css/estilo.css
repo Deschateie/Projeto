@@ -46,7 +46,7 @@
   background-repeat: no-repeat;
 }
 
-.is-widescreen{
+.menu-tabs{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -249,7 +249,7 @@
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
-  display: inline-block;
+  /*display: inline-block;*/
   transition: background-color 0.6s ease;
 }
 
@@ -277,7 +277,6 @@
 
 
 .action{
-  float: right;
   width: 30%;
   padding: 15px;
   flex: 0 1 auto;
@@ -393,7 +392,7 @@ label[for="btn_menu"]{
   border-bottom-color: #37B686;
 }
 
-footer{
+footer {
   bottom:0;
   width:100%;
 }

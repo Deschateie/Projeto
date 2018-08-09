@@ -24,39 +24,77 @@
 		</div>
 	</nav>
 	<main>
-		<div class="is-widescreen">
-			<form action="#" class="form">
-				<div class="box">
-					<h2 class="has-text-centered has-text-weight-bold">Login</h2>
-					<div class="field">
-						<label class="label">Username:</label>
-						<div class="control has-icons-left ">
-							<input class="input" type="text" placeholder="Username..." required>
-							<span class="icon is-small is-left">
-								<i class="fas fa-user"></i>
-							</span>
+		<div class="is-widescreen form-main-content-login">
+			<div class="form-login">
+				<form action="#" class="form">
+					<!--<div class="box">
+						<h2 class="has-text-centered has-text-weight-bold">Login</h2>
+						<div class="field">
+							<label class="label">Username:</label>
+							<div class="control has-icons-left ">
+								<input class="input" type="text" placeholder="Username..." required>
+								<span class="icon is-small is-left">
+									<i class="fas fa-user"></i>
+								</span>
+							</div>
 						</div>
-					</div>
-					<div class="field">
-						<label class="label">Senha:</label>
-						<div class="control has-icons-left">
-							<input class="input" type="password" placeholder="Senha..." required>
-							<span class="icon is-small is-left">
-								<i class="fas fa-key"></i>
-							</span>
+						<div class="field">
+							<label class="label">Senha:</label>
+							<div class="control has-icons-left">
+								<input class="input" type="password" placeholder="Senha..." required>
+								<span class="icon is-small is-left">
+									<i class="fas fa-key"></i>
+								</span>
+							</div>
 						</div>
+						<div class="field">
+							<button class="button is-success is-fullwidth" type="submit">Entrar</button>
+						</div>
+						<a href="forgot_password.html"><p>Esqueceu a senha?</p></a>
+					</div>-->
+					<h2 class="title-login">Realizar Login</h2>
+					<div class="form-group">
+						<label for="username-info">Username:</label>
+						<input type="text" class="input-login" id="username-info" placeholder="Username...">
 					</div>
-					<div class="field">
-						<button class="button is-success is-fullwidth" type="submit">Entrar</button>
+					<div class="form-group">
+						<label for="senha-info">Senha:</label>
+						<input type="password" class="input-login" id="senha-info" placeholder="Senha...">
 					</div>
-					<a href="forgot_password.html"><p>Esqueceu a senha?</p></a>
+					<button class="btn-submit-login">Logar</button>
+				</form>
+			</div>
+			<div class="content-side-form-login">
+				<div class="main-content-side">
+					<div class="paragraph-content-side">
+						<h2 class="title-side-content">Better Comfort and Better Choice.</h2>
+						<ul class="list-side-content">
+							<li>google</li>
+							<li>facebook</li>
+							<li>linkedin</li>
+							<li>text</li>
+							<li>text</li>
+						</ul>	
+					</div>
+					<div class="img-content-side">
+						<img src="http://fagnervianna.com.br/wp-content/uploads/2015/07/empresario.png" alt="my-profile">
+					</div>
 				</div>
-			</form>
+			</div>
 		</div>
 	</main>
+	<aside>
+		<div class="container">
+			<div class="aside-login">
+				<div class="aside-main-content-login">
+					<p>[ Algum conteudo aqui. ]</p>
+				</div>
+			</div>
+		</div>
+	</aside>
 	<footer>
-		<div class="footer">
-			<div class="container">
+		<div class="container">
+			<div class="footer">
 				<div class="network">
 					<a href="#"><i class="fab fa-instagram"></i></a>
 					<a href="#"><i class="fab fa-facebook-messenger"></i></a>
@@ -80,20 +118,6 @@
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-	<script>
-		var $doc = $('html, body');
-		$('.scrollSuave').click(function() {
-		    $doc.animate({
-		        scrollTop: $( $.attr(this, 'href') ).offset().top
-		    }, 500);
-		    return false;
-		});
-		$('.go_top_menu').click(function() {
-		    $doc.animate({
-		        scrollTop: $( $.attr(this, 'href') ).offset().top
-		    }, 500);
-		    return false;
-		});
-	</script>
+	<script src="_js/script.js"></script>
   </body>
 </html>
