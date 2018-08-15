@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="_css/bulma.css">
     <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   </head>
   <body>
 	<nav>
@@ -24,9 +25,11 @@
 		</div>
 	</nav>
 	<main>
+
 		<div class="container">
+		<!-- Parte sobre a biografia do Psicologo -->
 			<div class="user_bio_content">
-				<div class="image">
+				<div class="image-user-bio">
 					<img src="https://st2.depositphotos.com/1007566/12304/v/950/depositphotos_123041468-stock-illustration-avatar-man-cartoon.jpg" alt="#">
 				</div>
 				<div class="simple-bio">
@@ -37,22 +40,25 @@
 				</div>
 				<div class="bio-text">
 					<label class="label">Biografia:</label>
-					<p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ipsa voluptates iure rem porro recusandae possimus minima quia impedit velit dolor dignissimos iusto, consectetur magni quod dolorum explicabo cum earum!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ipsa voluptates iure rem porro recusandae possimus minima quia impedit velit dolor dignissimos iusto, consectetur magni quod dolorum explicabo cum earum!</p>
 				</div>
 			</div>
-			<div class="content_query">
-				<h2><label class="label"><center>Selecione a data e hora do atendimento:</center></label></h2><br>
-				<div class="calendar">
+		<!-- Fim sobre a biografia do psicologo -->
+		
+		<!-- Agendamento -->
+		<div class="content_query">
+			<div class="calendario">
+				<button class="btn-prev-dia"><i class="fas fa-angle-left"></i></button>
+				<div class="calendario-content">
 					<div class="month">      
 					  <ul>
-					    <li>
-					      Maio<br>
-					      <span style="font-size:18px">2018</span>
+					    <li class="mes-atual">
+					      <span id="calendario-year">2018</span>
 					    </li>
 					  </ul>
 					</div>
-
 					<ul class="weekdays">
+						<!-- 
 					  <li>Seg.</li>
 					  <li>Ter.</li>
 					  <li>Qua.</li>
@@ -60,44 +66,16 @@
 					  <li>Sex.</li>
 					  <li>Sab.</li>
 					  <li>Dom.</li>
+					-->
 					</ul>
-
-					<ul class="days">  
-					  <li>1</li>
-					  <li>2</li>
-					  <li>3</li>
-					  <li>4</li>
-					  <li>5</li>
-					  <li>6</li>
-					  <li>7</li>
-					  <li>8</li>
-					  <li>9</li>
-					  <li><span class="active">10</span></li>
-					  <li>11</li>
-					  <li>12</li>
-					  <li>13</li>
-					  <li>14</li>
-					  <li>15</li>
-					  <li>16</li>
-					  <li>17</li>
-					  <li>18</li>
-					  <li>19</li>
-					  <li>20</li>
-					  <li>21</li>
-					  <li>22</li>
-					  <li>23</li>
-					  <li>24</li>
-					  <li>25</li>
-					  <li>26</li>
-					  <li>27</li>
-					  <li>28</li>
-					  <li>29</li>
-					  <li>30</li>
-					  <li>31</li>
-					</ul>
+					<ul class="days"></ul>
 				</div>
+				<button class="btn-next-dia"><i class="fas fa-angle-right"></i></button>
+			</div>
+			<div class="tempo">
 				<div class="time">
-					<div class="buttons has-addons is-centered">
+					<div class="buttons">
+					<!-- 
 					  <span class="button" style="background-color: #37B686; color: white;">12:30</span>
 					  <span class="button" disabled>13:10</span>
 					  <span class="button" style="background-color: #b64050; color: white;">13:40</span>
@@ -110,43 +88,37 @@
 					  <span class="button" style="background-color: #37B686; color: white;">19:10</span>
 					  <span class="button" style="background-color: #37B686; color: white;">20:40</span>
 					  <span class="button" style="background-color: #37B686; color: white;">21:10</span>
+ 					-->
 					</div>
 					<div class="legend">
 						<p class="text_legend"><div class="background disponivel"></div>Dísponivel</p>
 						<p class="text_legend"><div class="background marcado"></div>Marcado</p>
 						<p class="text_legend"><div class="background indisponivel"></div>Indisponivel</p>
 					</div>
-					<div class="action_add">
-						<button class="add">Agendar</button>
-					</div>
+				</div>
+				<div class="action_add">
+					<button class="add" id="marcar-consulta">Agendar</button>
 				</div>
 			</div>
+		</div>
+		<!-- Fim agendamento -->
+
+		<!-- Inicio artigos do proprio psicologo -->
 			<div class="artigos">
 				<div class="title">
-					<label class="label">[Title do Article]</label>
+					<label class="label"></label>
 				</div>
-				<div class="content_article">
-					<p class="text_article" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aspernatur error esse iusto voluptatem, laudantium, enim maiores ipsam cupiditate. Fugiat nulla cupiditate dignissimos quidem commodi esse aliquam architecto numquam, vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam harum, expedita ex a odio voluptas obcaecati unde corporis molestias assumenda in esse reprehenderit, enim inventore labore! Numquam ad doloribus culpa.</p>
-					<br>
-				<div class="text_complete">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aspernatur error esse iusto voluptatem, laudantium, enim maiores ipsam cupiditate. Fugiat nulla cupiditate dignissimos quidem commodi esse aliquam architecto numquam, vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam harum, expedita ex a odio voluptas obcaecati unde corporis molestias assumenda in esse reprehenderit, enim inventore labore! Numquam ad doloribus culpa.</p>
-					<br>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aspernatur error esse iusto voluptatem, laudantium, enim maiores ipsam cupiditate. Fugiat nulla cupiditate dignissimos quidem commodi esse aliquam architecto numquam, vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam harum, expedita ex a odio voluptas obcaecati unde corporis molestias assumenda in esse reprehenderit, enim inventore labore! Numquam ad doloribus culpa.</p>
-					<br>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aspernatur error esse iusto voluptatem, laudantium, enim maiores ipsam cupiditate. Fugiat nulla cupiditate dignissimos quidem commodi esse aliquam architecto numquam, vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam harum, expedita ex a odio voluptas obcaecati unde corporis molestias assumenda in esse reprehenderit, enim inventore labore! Numquam ad doloribus culpa.</p>
-					<br>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aspernatur error esse iusto voluptatem, laudantium, enim maiores ipsam cupiditate. Fugiat nulla cupiditate dignissimos quidem commodi esse aliquam architecto numquam, vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam harum, expedita ex a odio voluptas obcaecati unde corporis molestias assumenda in esse reprehenderit, enim inventore labore! Numquam ad doloribus culpa.</p>
-					</div>
-				</div>
+				<div class="content_article"></div>
 				<div class="action_article">
 					<button class="btn_action_article">Ler Mais</button>
 				</div>
 			</div>
 		</div>
+		<!-- Fim artigos do psicologo -->
 	</main>
 	<footer>
-		<div class="footer">
-			<div class="container">
+		<div class="container">
+			<div class="footer">
 				<div class="network">
 					<a href="#"><i class="fab fa-instagram"></i></a>
 					<a href="#"><i class="fab fa-facebook-messenger"></i></a>
@@ -169,20 +141,9 @@
 
 	<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script>
-		var $doc = $('html, body');
-		$('.scrollSuave').click(function() {
-		    $doc.animate({
-		        scrollTop: $( $.attr(this, 'href') ).offset().top
-		    }, 500);
-		    return false;
-		});
-		$('.go_top_menu').click(function() {
-		    $doc.animate({
-		        scrollTop: $( $.attr(this, 'href') ).offset().top
-		    }, 500);
-		    return false;
-		});
-	</script>
+	<script src="_js/script.js"></script>
+	<script src="_js/moment.js"></script>
+	<script src="_js/moment_locale_pt-br.js"></script>
+	<script src="_js/script_agendamento.js"></script>
   </body>
 </html>
