@@ -1,0 +1,89 @@
+.field{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.group_input{
+	display: inline-block;
+	width: 45%;
+}
+
+.field .right, .group_input .control .right, .group_input .rigth {
+	margin-left: 22%;
+}
+
+.field .control .textarea {
+    width: 100%;
+    max-width: 100%;
+    max-height: 110px;
+}
+
+.field .file .file-cta{
+	background-color: #37B686;
+}
+
+.field .file-input{
+	width: 100%;
+}
+
+
+
+.group_composto {
+	width: 21%;
+	margin-left: 3%;
+}
+
+.adress_group{
+	width: 100%;
+}
+
+#checkbox_parceria:checked ~ .parceria{
+	margin-left: 0;
+	position: relative;
+}
+
+label.checkbox{
+	margin: 10px 0;
+}
+
+
+.endereco_grupo_1{
+	width: 30%;
+	margin-left: 4.5%;
+}
+
+.endereco_grupo_1:first-child{
+	width: 30%;
+	margin-left: 0%;
+}
+
+.endereco_grupo_2{
+	width: 24%;
+	margin-left: 5px;
+}
+
+fieldset{
+	margin: 5px 0; 
+}
+.label .has-text-centered{
+	margin: 0 10px;
+}
+
+.parceria .group_input .select, .parceria .group_input select{
+	width: 100%;
+}
+
+.parceria .field .group_input:last-child{
+	margin-left: 9.5%;
+}
+
+.parceria{
+	margin-left: -1000%;
+	position: absolute;
+}
+
+footer {
+	bottom:0;
+	width:100%;
+	position: sticky;
+}

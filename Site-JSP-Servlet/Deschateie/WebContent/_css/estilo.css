@@ -1,0 +1,513 @@
+
+/*Importando os CSSs de outras paginas*/
+@import url("menu_pattern.css");
+
+/* Menor de Idade */
+@import url("layouts/page_especial_menor_idade.css");
+/* Agendamento */
+@import url("layouts/agendamento.css");
+/* Formulario usuario */
+@import url("layouts/cadastro_psicologo.css");
+/* Login */
+@import url("layouts/login.css");
+/* Mapa */
+@import url("layouts/mapa.css");
+/* Chat */
+@import url("layouts/chatbot.css");
+/* Catalago */
+@import url("layouts/catalogo.css");
+/* Monitoramento das conversas (voluntario/psicologo) */
+@import url("layouts/monitoramento.css");
+
+*{
+	margin: 0;
+	border: none;
+	padding: 0;
+}
+.container{
+  width: 900px;
+  margin: 0 auto;
+}
+
+
+.banner {
+  /*
+  background-image: -webkit-linear-gradient(rgba(55, 182, 134, .5), rgba(55, 182, 134, .2)), url("https://irp-cdn.multiscreensite.com/8cfcb9bd/dms3rep/multi/desktop/DRV-ARQ-INT-REC-R00-2048x1077.jpg");
+  background-image: -o-linear-gradient(rgba(55, 182, 134, .5), rgba(55, 182, 134, .2)), url("https://irp-cdn.multiscreensite.com/8cfcb9bd/dms3rep/multi/desktop/DRV-ARQ-INT-REC-R00-2048x1077.jpg");
+  background-image: linear-gradient(rgba(55, 182, 134, .5), rgba(55, 182, 134, .2)), url("https://irp-cdn.multiscreensite.com/8cfcb9bd/dms3rep/multi/desktop/DRV-ARQ-INT-REC-R00-2048x1077.jpg");
+  */
+ background-image: -webkit-linear-gradient(#333, black), url("https://irp-cdn.multiscreensite.com/8cfcb9bd/dms3rep/multi/desktop/DRV-ARQ-INT-REC-R00-2048x1077.jpg");
+ background-image: -o-linear-gradient(#333, black), url("https://irp-cdn.multiscreensite.com/8cfcb9bd/dms3rep/multi/desktop/DRV-ARQ-INT-REC-R00-2048x1077.jpg");
+ background-image: linear-gradient(#333, black), url("https://irp-cdn.multiscreensite.com/8cfcb9bd/dms3rep/multi/desktop/DRV-ARQ-INT-REC-R00-2048x1077.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 80px 0px;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.menu-tabs{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 50vh;
+}
+
+.tabs{
+  flex: 0 1 auto;
+  width: 100%;
+}
+
+.content-item{
+  width: 100%;
+  flex: 0 1 auto;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+.content-text-banner{
+  /* width: 50%; */
+  flex: 0 1 auto;
+  max-width: 50%;
+}
+
+.content-text-banner h1 {
+  font-size: 40px;
+  margin-top: 0;
+}
+.content-text-banner p {
+  font-size: 25px;
+  margin-bottom: 0;
+  opacity: 0.8;
+  font-weight: lighter;
+  text-align: left;
+  max-width: 450px;
+}
+
+/* Carousel */
+.main-content{
+  height: 100vh;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.block-content{
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 20px;
+    height: 50vh;
+}
+
+.text_content{
+  /* width: 100%; */
+  flex: 0 1 auto;
+  align-self: stretch;
+  max-width: 50%;
+}
+.text_content h2{
+  font-size: 30px; 
+  height: 120px;
+  color: #000; 
+  text-align: justify;"
+}
+
+
+.action_perfomance{
+  /* margin-top: 20%; */
+  /* margin-left: 80%; */
+  flex: 0 1 auto;
+  align-self: flex-end;
+  margin: 15px;
+  padding: 40px;
+  width: 30%;
+}
+
+.action_perfomance button{
+  padding: 15px; 
+  background-color: transparent; 
+  border: 1px solid #37B686; 
+  width: 100%;  
+  color: #333;
+}
+
+.action_perfomance button:hover{
+  transition: all .5s;
+  background-color: #37B686; 
+  color: white;
+}
+
+/* Slideshow container */
+.slider{
+  background-image: url(../_img/1787-light-green-abstract-low-poly-background-illustrator.jpg); 
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #000;
+  height: 60vh;
+}
+/*.slider2{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #000;
+}
+.slider3{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #000;
+}*/
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  /* margin: auto; */
+  flex: 0 1 auto;
+}
+
+.controls-slider{
+  /* text-align: center; */
+  align-self: center;
+  flex: 0 1 auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: #37B686;
+}
+
+/* Caption text */
+.text {
+  color: #000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .05);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #37B686;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  /*display: inline-block;*/
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #37B686;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.action{
+  width: 30%;
+  padding: 15px;
+  flex: 0 1 auto;
+  align-self: flex-end;
+}
+
+.action button{
+  padding: 15px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .1);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* HOVER BUTTON */
+.action button:hover{
+  transition: all .5s;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Menu dropdown */
+label[for="btn_menu"]{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, .1);
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    position: absolute;
+    margin-top: -80px;
+}
+label[for="btn_menu"]:hover{
+  transition: all .5s;
+  background-color: #fff;
+  color: #333;
+}
+#btn_menu{
+    display: none;
+}
+label[for="btn_menu"]{
+    display: none;
+}
+#btn_menu:checked ~ ul{
+    height: auto;
+    margin-left: 0;
+    position: relative;
+}
+
+@media screen and (max-width: 800px){
+    label[for="btn_menu"]{
+        display: block;
+    }
+
+    /* colocando margin entre o texto e o menu */
+    .tabs{
+      height: 160px;
+    }
+    .action{
+      width: 100%;
+    }
+    .content-text-banner{
+      width: 100%;
+    }
+    /*Encolhendo o menu*/
+    .tabs ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      align-content: flex-start;
+      margin-left: -1000px;
+      position: absolute;
+    }
+    .tabs ul li{
+      width: 100%;
+      flex: 0 1 auto;
+    }
+}
+
+/* Menu */
+.tabs ul li.is-active a{
+  color: #fff;
+  border-bottom-color: #37B686;
+}
+
+.tabs ul li a{
+  color: white;
+}
+
+.tabs ul li a:hover{
+  transition: all .3s;
+  background-color: rgba(0, 0, 0, .1);
+  border-bottom-color: #37B686;
+  color: white;
+}
+
+.tabs ul li .btn_cvs{
+  background-color: #37B686;
+}
+
+.tabs ul li .btn_sair{
+  background-color: lightcoral;
+}
+
+.tabs ul li .btn_cvs:hover{
+  -webkit-transition: all .25s;
+     -moz-transition: all .25s;
+      -ms-transition: all .25s;
+       -o-transition: all .25s;
+          transition: all .25s;
+  background-color: #37B686;
+  color: white;
+  border-bottom-color: #37B686;
+}
+
+footer {
+  bottom:0;
+  width:100%;
+}
+
+/* FOOTER */
+.footer{
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: space-between;
+  height: 20vh;
+  background-color: white;
+  padding: 0;
+}
+.network{
+  width: 50%;
+  /* float: left; */
+  font-size: 26px;
+  /* padding-left: 40px; */
+  /* padding-right: 40px; */
+  text-align: center;
+  flex: 0 1 auto;
+}
+
+.network a{
+  color: #37B686;
+  padding-left: 5px;
+}
+
+.network .fa-youtube:hover{
+  transition: all 1s;
+  color: #b63737;
+}
+.network .fa-facebook-messenger:hover{
+  transition: all 1s;
+  color: #3770b6;
+}
+.network .fa-instagram:hover{
+  transition: all 1s;
+  color: #63079D;
+}
+
+.footer-menu{
+  /* float: right; */
+  width: 50%;
+  /* padding-left: 40px; */
+  /* padding-right: 40px; */
+  text-align: center;
+  flex: 0 1 auto;
+}
+
+.footer-menu a{
+  margin-left: 15px;
+  color: #37B686; 
+}
+
+.footer-menu a:hover{
+  transition: all .5s;
+  color: black;
+}
+
+.other-content{
+  background-color: #eee;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
+}
+
+.go_top{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 5em;
+  margin-top: 20%;
+  background-color: #37B686;
+  color: #fff;
+  padding: 15px;
+}
+
+.go_top a{
+  width: 100%;
+  color: #fff;
+}
+
+.copyright{
+  width: 100%;
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.copyright p{
+  text-align: center;
+  color: #666;
+}
+
+.content{
+  text-align: justify;
+  font-size: 18px;
+  flex: 0 1 auto;
+}
+.slogan{
+  font-style: italic;
+}

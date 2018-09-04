@@ -1,0 +1,306 @@
+.container .user_bio_content{
+    /*
+    border-bottom: 1px solid rgba(0,0,0,.2); 
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    */
+   display: flex;
+   flex-flow: row wrap;
+   align-items: stretch;
+   align-content: stretch;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.bio-text{
+	padding: 10px;
+	/*width: 100%;*/
+    flex: 1 1 auto;
+    align-self: flex-end;
+}
+
+.simple-bio{
+    /*margin-left: 50px;*/
+    padding: 15px;
+    flex: 1 1 auto;
+    width: 45%;
+}
+
+.user_bio_content .image-user-bio{
+    padding: 15px;
+	width: 20%;
+    /*height: 100px;*/
+    /*height: auto;*/
+    /*''
+    margin-right: 50px;
+    */
+   max-height: 150px;
+   flex: 0 1 auto;
+}
+.user_bio_content .image-user-bio img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/* Artigos */
+.text-artigo{
+    margin: 10px;
+    text-indent: 5px;
+    text-align: justify;
+    color: #777;
+    width: 100%;
+    font-size: 15px;
+}
+
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #37B686;
+    text-align: center;
+}
+
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/*
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    margin-right: 520px;
+    padding-top: 10px;
+}
+*/
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.weekdays li {
+    flex: 0 1 auto;
+    width: 14%;
+    color: #666;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    height: 225px;
+}
+
+.days li {
+    list-style-type: none;
+    width: 13%;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-left: 3px;
+    font-size:12px;
+    color: #777;
+    flex: 0 1 auto;
+    padding: 5px;
+}
+
+.days li.active {
+    background: #37B686;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+
+.content_query{
+	width: 100%;
+	padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.content_query .calendario{
+    flex: 0 1 auto;
+    padding: 15px;
+    width: 45%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.calendario .calendario-content{
+    flex: 0 1 auto;
+    margin: 10px;
+}
+
+.btn-next-dia, .btn-prev-dia{
+    background-color: transparent;
+    flex: 0 1 auto;
+}
+.btn-next-dia:focus, .btn-prev-dia:focus{
+    outline: none;
+}
+
+.btn-next-dia .fa-angle-right, .btn-prev-dia .fa-angle-left{
+    font-size: 36px !important;
+    color: #37B686 !important;
+}
+
+.content_query .tempo{
+    flex: 0 1 auto;
+    padding: 15px;
+    width: 45%;
+    /*background-color: #ccc;*/
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.time{
+    width: 100%;
+    padding: 10px;
+    flex: 0 1 auto;
+    /*background-color: #aaa;*/
+}
+
+.action_add{
+    flex: 0 1 auto;
+    width: 100%;
+    padding: 10px;
+    /*background-color: #eee;*/
+}
+
+.action_add .add{
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #37B686;
+    background-color: rgba(255, 255, 255, 0);
+    color: #37B686;
+    width: 100%;
+}
+
+.action_add .add:focus{
+    outline: none;
+}
+
+.action_add .add:hover{
+    background-color: #37B686;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.buttons .button{
+    color: white;
+    border: none;
+}
+
+
+.time .legend .background{
+    width: 15px; 
+    display: inline-block; 
+    height: 15px;
+    margin-right: 10px;
+}
+
+.disponivel{
+     background-color: #37B686; 
+}
+
+.indisponivel{
+     background-color: #dbdbdb; 
+}
+
+.selecionado{
+    background-color: blue;
+}
+
+.marcado{
+     background-color: #b64050; 
+}
+
+.time .legend .text_legend{
+    font-weight: bolder;
+}
+
+.artigos{
+     width: 100%; 
+     padding: 15px; 
+     margin-bottom: 10px;
+}
+
+.artigos .title{
+    text-align: center;
+}
+.artigos .text_article, .artigos .text_complete{
+    text-align: justify;
+    font-family: Arial, sans-serif;
+}
+
+.artigos .text_complete{
+    margin-left: -1000%;
+    position: absolute;
+}
+
+.artigos .action_article .btn_action_article{
+    background-color: rgba(0, 0, 0, .02); 
+    color: #37B686;
+    width: 100%; 
+    padding: 10px;
+}
+
+.artigos .add:active ~ .artigos .text_complete{
+    margin-left:0;
+    position: relative;
+}
+
+.ano-atual{
+    font-family: monospace; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: bold; 
+    line-height: 26.4px; 
+    color: #333 !important;
+}

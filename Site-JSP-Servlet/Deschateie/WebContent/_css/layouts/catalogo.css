@@ -1,0 +1,275 @@
+.list_itens{
+	/*width: 40%;*/
+	padding: 40px;
+	width: 100%;
+}
+.content_catalogo{
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: space-between;
+    width: 100%;
+    flex: 0 1 auto;
+}
+
+.catalogo_query{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: stretch;
+	align-content: stretch;
+	justify-content: flex-start;
+	width: 100%;
+	margin-top: 15px;
+}
+
+.image{
+    flex: 0 1 auto;
+    width: 30%;
+}
+
+.image img{
+	width: 100%;
+}
+
+.desc-content{
+    flex: 0 1 auto;
+    width: 65%;
+    font-size: 15px;
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    align-content: stretch;
+}
+
+.content_bio{
+    flex: 0 1 auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.content_bio h2{
+	font-weight: bolder;
+}
+
+.content_bio p{
+	text-align: justify;
+}
+
+.content_bio .cash{
+	text-align: right;
+	opacity: .3;
+	font-style: italic;
+	display: flex;
+	flex-flow: row nowrap;
+	align-content: flex-start;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 40%;
+}
+
+.cash .minValueCard, .cash .maxValueCard{
+	flex: 0 1 auto;
+	width: 30%;
+	display: flex;
+	flex-flow: row nowrap;
+	align-content: flex-start;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.rs, .minValueCard .min-value, .maxValueCard .max-value{
+	flex: 0 1 auto;
+	width: 50%;
+}
+
+.action_content{
+	flex: 1 1 auto;
+	width: 100%;
+	padding: 15px;
+}
+
+.action_content .fa-plus{
+	margin-right: 10px;
+}
+
+.action_content .btn_submit{
+	background-color: #37B686;
+	padding: 10px;
+	border: 1px solid #37B686;
+	color: #fff;
+	width: 100%;
+}
+
+.action_content .btn_submit:hover{
+	transition: all .8s;
+	color: #37B686;
+	background-color: #fff;
+	border: 1px solid #37B686;
+}
+
+/* Avaliação */
+.rank{
+	flex: 0 1 auto;
+	width: 100%;
+	text-align: right;
+	padding: 10px;
+}
+
+.rank p{
+
+}
+
+/* Filtro */
+.filter{
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(89, 200, 70, .5);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.search{
+	width: 45%;
+    /* display: inline-block; */
+    flex: 0 1 auto;
+}
+
+.search label{
+	width: 100%;
+	display: block;
+}
+
+.search .input_search{
+	margin-top: 5px;
+	width: 50%;
+	padding: 5px;
+	text-indent: 10px;
+	border: 1px solid #eee;
+}
+
+.search .input_search:focus,  .search .btn_search:focus	{
+    outline:none; 
+     border:1px solid rgba(55, 182, 134, .5);
+     -webkit-box-shadow: 0px 0px 1px  rgba(55, 182, 134, .5);
+     box-shadow: 0px 0px 1px  rgba(55, 182, 134, .5);
+}
+
+.search .btn_search{
+	padding: 5px;
+	width: 20%;
+	background-color: #37B686;
+	height: 30px;
+}
+
+.search .btn_search .fa-search{
+	color: #eee;
+	width: 100%;
+	transition: all .5s;
+}
+
+.search .btn_search:hover{
+	background-color: white;
+	border: 1px solid #37B686;
+	transition: all .5s;
+}
+
+.search .btn_search .fa-search:hover{
+	color: #37B686;
+}
+
+
+/* Button Radio */
+
+
+/* Button Range Slider */
+input[type='range'] {
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+}
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+    background: none;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  background: #37B686;
+}
+
+input[type='range']:nth-child(2)::-webkit-slider-runnable-track{
+  background: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  margin-top: -7px;
+  background: #fff;
+  border: 1px solid #37B686;
+  border-radius: 25px;
+  z-index: 1;
+}
+
+input[type='range']:nth-child(1)::-webkit-slider-thumb{
+  z-index: 2;
+}
+
+.rangeslider input{
+    position: absolute;
+}
+.rangeslider{
+    position: absolute;
+}
+
+.rangeslider span{
+    position: absolute;
+    margin-top: 30px;
+    left: 0;
+}
+
+.rangeslider .right{
+   position: relative;
+   float: right;
+}
+.rangeslider{
+    /* float: right; */
+    position: relative;
+    bottom: 24px;
+    /* display: inline-block; */
+    width: 40%;
+    flex: 0 1 auto;
+}
+
+.main-search-map
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: stretch;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%; 
+}
+
+.main-search-map .filter-search{
+	flex: 0 1 auto;
+	width: 40%;
+}
+
+.main-search-map .google-map{
+	flex: 0 1 auto;
+	width: 50%;
+}
