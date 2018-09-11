@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7306EEB9-DCF2-8209-3477-A3280184EABD" containerWithKeyObject="7040C722-C46C-999B-9324-EE2A6D20B23F" localFKIndex="63CD650E-7BC3-C8EF-C74D-7B072216E09C" name="FK_SCP_VOL_USUARIO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>B237D9B1-BFC0-E55E-16D3-C9F2FC352901</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<referredTableLongName>T_SCP_USUARIO</referredTableLongName>
+<arc>925AFDBE-99B4-8545-891B-768376D0FEF5</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>621568FE-BE6C-0AC6-9DCC-B0DF6098E258</referredTableID>
+<keyObject>13654355-6FD8-9F89-ADF9-1A2CAFEB46EE</keyObject>
+<referredKeyID>13654355-6FD8-9F89-ADF9-1A2CAFEB46EE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_usuario</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

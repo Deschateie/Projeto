@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DEVE_TER_PGTO" directorySegmentName="seg_0" id="6FEF88CC-66B1-B999-3BF8-1D087EED2851">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-15 13:58:41 UTC</createdTime>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<engineerTo>
+<item key="F6AB5D53-4821-7678-6F27-B6BC5E73F171" value="true"/>
+</engineerTo>
+<sourcePk>5BCF7D50-8397-5897-6825-C2C708C3A01A</sourcePk>
+<dominantRole>D187A67F-0B69-5B13-BBF3-4817477CBD6A</dominantRole>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D187A67F-0B69-5B13-BBF3-4817477CBD6A</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>6CB8139B-4F57-36E9-C073-740623B5EF79</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

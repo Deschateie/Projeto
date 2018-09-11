@@ -1,0 +1,203 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C924DA72-8AFA-54E1-1183-FDB325BFBE22" name="T_SCP_ENDERECO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>FBC9CD6E-51C6-DDB7-4954-29D58166B11F</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_endereco" id="D170A24F-9414-BFEF-5EC1-DD3FCC215061">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>69D021E5-5392-9552-DB0B-1201DDB23553</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_psicologo" id="3CA6FEAD-0299-AFAD-8467-BCE490027B41">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>41D235D6-8B65-DF95-B7ED-191994500E5E</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FCEF56BE-0F9B-D843-A6F9-88935CBA4C7C" referredColumn="F9E6B432-D558-6C1D-5FE4-BDC9812EEF62"/>
+</associations>
+</Column>
+<Column name="cd_voluntario" id="5F0F9B06-5217-2CCA-1A7A-AD7E93FE2865">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>43CDA66F-76EE-A182-65F6-876CCE12AB0A</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACAE69FE-82AD-E56D-91DB-9783AD6C4B51" referredColumn="2D7BC2DD-CD49-A7EE-2B99-270676707C18"/>
+</associations>
+</Column>
+<Column name="ds_tipo" id="32144EF7-E150-EB93-AAD5-118A2BD64185">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>80090BA4-480D-9AEA-2873-264A5BF74D53</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_logradouro" id="13832768-8379-1876-E1F9-B08451CDB1B9">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>874E37F8-4677-B594-4491-6FFA0212736C</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_numero" id="B9245949-4881-DC23-7C19-D9D02CEA04F8">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>1FE48CB2-0394-B3A5-2BD0-BD7ECF2F1937</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_complemento" id="8E63FAE6-7BD3-70D1-E5A8-1420B8297CFB">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>43760003-56E1-1476-A45D-E8E11932FA56</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_cep" id="BED2BB07-FFC7-4F41-420A-4E7735606D31">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>F9FB34E2-8FDA-C100-56D3-5F7981B7AEFF</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_bairro" id="112444E4-E78F-5458-4A30-EF0ACF654DC9">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>61C93F15-C1FB-4F72-9B4B-279858236940</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_cidade" id="5A6F8D7A-09C3-D42E-3AEE-35D9373258A5">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>1FC72CD3-8930-DA48-55CA-7D060DEFA2C7</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_uf" id="3247526A-4512-844B-BC04-0D6AEA3A9A65">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>317C7EC2-3042-B7BD-D42B-91F6C609081B</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_pais" id="2B09B2B3-9B3B-EAC4-03F2-005FF0DB1B53">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>1FCF9B63-633E-0E1F-F434-8596FFE101FC</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="279A56DD-943C-A364-E18D-3DC136E7E872" name="PK_SCP_ENDERECO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>6779A301-53B2-5516-03ED-CF715F406ECA</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D170A24F-9414-BFEF-5EC1-DD3FCC215061"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B10D0689-840A-6D2D-6E8B-1E530BA6986C" name="FK_SCP_ENDCO_PSI">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>4F46ADBC-725E-33EB-4E6D-8539C415F5A9</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CA6FEAD-0299-AFAD-8467-BCE490027B41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CCA36362-8F84-F45D-63EF-2072D26DA993" name="FK_SCP_ENDCO_VOL">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>1FD24CF7-BAC4-C275-2376-CCE3E6E2459C</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F0F9B06-5217-2CCA-1A7A-AD7E93FE2865"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

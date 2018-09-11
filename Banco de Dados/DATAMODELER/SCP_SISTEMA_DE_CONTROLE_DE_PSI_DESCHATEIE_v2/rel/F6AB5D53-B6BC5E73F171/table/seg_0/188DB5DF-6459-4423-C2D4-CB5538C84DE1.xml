@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="188DB5DF-6459-4423-C2D4-CB5538C84DE1" name="T_SCP_USUARIO_CONVERSA">
+<createdBy>HioX</createdBy>
+<createdTime>2018-08-30 16:43:24 UTC</createdTime>
+<generatorID>18D9683E-75D8-E7A8-78ED-9016F20627E4</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_usuario" id="CD5C79A0-91C3-0F71-D0BA-0BBED8E8BBCF">
+<createdBy>HioX</createdBy>
+<createdTime>2018-08-30 16:43:24 UTC</createdTime>
+<generatorID>4860070C-364F-717E-796C-7B3C83CAFA86</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AAFCD03-FA42-856F-355F-447AC1E864BA" referredColumn="1C10FF8C-C015-0230-5254-7293893DA4C6"/>
+</associations>
+</Column>
+<Column name="cd_conversa" id="06F09B2C-115D-E91E-9C53-CDBA6B5F946A">
+<createdBy>HioX</createdBy>
+<createdTime>2018-08-30 16:43:24 UTC</createdTime>
+<generatorID>19343392-5EFA-2622-1827-3D6534BC9A5F</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="38D88522-B31C-2796-3230-6F95BD7841BE" referredColumn="91A2C7F4-2131-03B5-E9F6-4E17AADFB649"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4A29B4E2-22B9-6435-6B17-DDBC11D89DBA" name="PK_SCP_USUARIO_CONVERSA">
+<createdBy>HioX</createdBy>
+<createdTime>2018-08-30 16:43:24 UTC</createdTime>
+<generatorID>8A4AC9AB-7F32-7BDF-4992-B0AED44588B6</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD5C79A0-91C3-0F71-D0BA-0BBED8E8BBCF"/>
+<colUsage columnID="06F09B2C-115D-E91E-9C53-CDBA6B5F946A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0D7C77F-0938-60F0-9AE0-D82AD9462CC1" name="FK_SCP_USUARIO_CONV_CONV">
+<createdBy>HioX</createdBy>
+<createdTime>2018-08-30 16:43:24 UTC</createdTime>
+<generatorID>6280D049-7C34-7E45-AC2F-EA18F2AACCB4</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06F09B2C-115D-E91E-9C53-CDBA6B5F946A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5315B66E-69A1-6777-9A58-C0F94F900EAB" name="FK_SCP_USUARIO_CONV_USUARIO">
+<createdBy>HioX</createdBy>
+<createdTime>2018-08-30 16:43:24 UTC</createdTime>
+<generatorID>C1F21B25-A15F-A4EB-2296-8D90DFD3BB55</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD5C79A0-91C3-0F71-D0BA-0BBED8E8BBCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

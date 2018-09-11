@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="26744F1E-543B-F794-F9AB-DD5FA8DC15E7" containerWithKeyObject="1A9CAC20-2111-612A-791B-34A25BF537FA" localFKIndex="D97FA770-A390-F6DC-B09C-4FB3E2E4D6DD" name="FK_SCP_CONS_PACIENTE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>4EE457B6-8A5B-04A8-0ABE-D7CD76EDF98E</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<referredTableLongName>T_SCP_PACIENTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>67C53F9E-682A-A79E-B174-1E257B3C09B9</referredTableID>
+<keyObject>34D3844C-DA99-7A5B-C0EF-A43FDE7164B1</keyObject>
+<referredKeyID>34D3844C-DA99-7A5B-C0EF-A43FDE7164B1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_paciente</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

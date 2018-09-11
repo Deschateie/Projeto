@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="925AFDBE-99B4-8545-891B-768376D0FEF5" name="heranca">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>621568FE-BE6C-0AC6-9DCC-B0DF6098E258</table>
+<fkeys>
+<fkeyID>9AFE1809-563A-277B-485D-0051E9A85130</fkeyID>
+<fkeyID>7306EEB9-DCF2-8209-3477-A3280184EABD</fkeyID>
+<fkeyID>440EF2DF-AE11-6EFD-7FA3-2E507A2F56E9</fkeyID>
+</fkeys>
+</FKArc>

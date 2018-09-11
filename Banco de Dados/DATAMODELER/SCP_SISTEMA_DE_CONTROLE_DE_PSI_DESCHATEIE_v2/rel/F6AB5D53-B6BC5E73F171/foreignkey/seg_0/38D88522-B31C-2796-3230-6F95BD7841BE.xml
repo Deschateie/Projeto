@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="38D88522-B31C-2796-3230-6F95BD7841BE" containerWithKeyObject="188DB5DF-6459-4423-C2D4-CB5538C84DE1" localFKIndex="B0D7C77F-0938-60F0-9AE0-D82AD9462CC1" name="FK_SCP_USUARIO_CONV_CONV">
+<createdBy>HioX</createdBy>
+<createdTime>2018-08-30 16:43:24 UTC</createdTime>
+<generatorID>6280D049-7C34-7E45-AC2F-EA18F2AACCB4</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<referredTableLongName>T_SCP_CONVERSA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6203B28B-2C21-EB2E-5CBE-7D6A6F8CE946</referredTableID>
+<keyObject>67CC76A3-B11E-111C-F4C7-15C15FCCD9D5</keyObject>
+<referredKeyID>67CC76A3-B11E-111C-F4C7-15C15FCCD9D5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_conversa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

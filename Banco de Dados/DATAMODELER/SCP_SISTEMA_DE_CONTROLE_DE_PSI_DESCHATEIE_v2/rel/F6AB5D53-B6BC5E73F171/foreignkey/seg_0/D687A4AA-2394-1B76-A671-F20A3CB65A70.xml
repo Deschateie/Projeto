@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D687A4AA-2394-1B76-A671-F20A3CB65A70" containerWithKeyObject="6D579C72-54AE-4C7A-D914-AA5B14669767" localFKIndex="95792DA7-9590-51D0-729A-C6E9988F4C04" name="FK_SCP_PGTO_FORMA_PGTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>0C3EACEB-BDF0-5475-8FD9-7E43017A32CD</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<referredTableLongName>T_SCP_FORMA_PAGAMENTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>83F77636-BA92-3E2C-4B8C-A7377A0CA9C9</referredTableID>
+<keyObject>46B86219-1BFA-AFC7-1D5E-138F2C064B6C</keyObject>
+<referredKeyID>46B86219-1BFA-AFC7-1D5E-138F2C064B6C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_forma_pgto</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

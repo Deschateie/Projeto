@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1A9CAC20-2111-612A-791B-34A25BF537FA" name="T_SCP_CONSULTA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>D187A67F-0B69-5B13-BBF3-4817477CBD6A</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_consulta" id="92784D0C-4850-379C-5C5F-B89E0139B99D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>E2A171CF-1185-90AD-9211-1E260F38800C</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_psicologo_on" id="F9787D43-B113-818D-FF6B-7BEA01976C25">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>A95F0F7E-A6C9-72C6-31A2-823C4922CB91</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E85BAF3-90A3-C46B-5FBB-BCC31D089684" referredColumn="27F0DE36-5543-A30D-5F14-4B8CF5ED113B"/>
+</associations>
+</Column>
+<Column name="cd_paciente" id="D64F0828-52B5-38A7-D2E8-B1DED314980D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>019670ED-C5CC-FE96-EAB4-F90F2111BF7B</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="26744F1E-543B-F794-F9AB-DD5FA8DC15E7" referredColumn="9C5219A0-4E55-0CCA-59CF-6087BE1ED6D3"/>
+</associations>
+</Column>
+<Column name="cd_conversa" id="0076429F-7CCD-3134-2898-599D07F781B6">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>C0B8D079-8678-E7E7-4B4F-10DAF46D9185</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3CB6C5A3-236B-71D8-60FF-F1D8AFDFC177" referredColumn="91A2C7F4-2131-03B5-E9F6-4E17AADFB649"/>
+</associations>
+</Column>
+<Column name="dt_consulta" id="21B3F9D1-8055-47C2-6114-029132462285">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>50F37C52-1EFE-8726-57A7-C1CCD8C15AB1</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_nota_atendimento" id="317E03B3-3360-3351-F630-B82BF17C8904">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>447B3E2C-5D21-1E2C-7994-687F4B13C1B0</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_comentario" id="235FAB0F-2BD0-D2BD-747D-B7E4D8C40E5E">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>E5D464FA-642E-8849-FE4A-FF5597099E3D</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<ownDataTypeParameters>120,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B43CC475-50E4-03E0-A313-A9B7EFF15B10" name="PK_SCP_CONSULTA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>5BCF7D50-8397-5897-6825-C2C708C3A01A</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9787D43-B113-818D-FF6B-7BEA01976C25"/>
+<colUsage columnID="D64F0828-52B5-38A7-D2E8-B1DED314980D"/>
+<colUsage columnID="92784D0C-4850-379C-5C5F-B89E0139B99D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B0AFB82-7869-6F06-435A-D26497FC89F8" name="FK_SCP_CONS_CONVERSA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>91CE2DFC-8C90-0B5B-76B7-619B16685E43</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0076429F-7CCD-3134-2898-599D07F781B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DAF84965-FAA5-5D35-B2A9-66A980C454F1" name="FK_SCP_CONS_PSI_ONLINE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>FE1C0EFD-C293-316F-00F4-761ED0535005</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9787D43-B113-818D-FF6B-7BEA01976C25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D97FA770-A390-F6DC-B09C-4FB3E2E4D6DD" name="FK_SCP_CONS_PACIENTE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>4EE457B6-8A5B-04A8-0ABE-D7CD76EDF98E</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D64F0828-52B5-38A7-D2E8-B1DED314980D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_SCP_CONSULTA_NOTA" directorySegmentName="seg_0" id="54D6302F-581B-1F3F-2B67-CA5046B440E3">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-09-05 14:50:31 UTC</createdTime>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<rule>vl_nota_atendimento&gt;=1 and vl_nota_atendimento&lt;=5</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

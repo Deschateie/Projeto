@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PODE_CONVERSAR" directorySegmentName="seg_0" id="C1F21B25-A15F-A4EB-2296-8D90DFD3BB55">
+<createdBy>HioX</createdBy>
+<createdTime>2018-08-30 16:33:39 UTC</createdTime>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<engineerTo>
+<item key="F6AB5D53-4821-7678-6F27-B6BC5E73F171" value="true"/>
+</engineerTo>
+<sourcePk>AD4DB9BD-1053-6C4A-D598-D0F446BA7681</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1AB4B448-693D-5C3A-63D0-7C4D707A8B2B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>18D9683E-75D8-E7A8-78ED-9016F20627E4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

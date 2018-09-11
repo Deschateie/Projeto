@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3E85BAF3-90A3-C46B-5FBB-BCC31D089684" containerWithKeyObject="1A9CAC20-2111-612A-791B-34A25BF537FA" localFKIndex="DAF84965-FAA5-5D35-B2A9-66A980C454F1" name="FK_SCP_CONS_PSI_ONLINE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>FE1C0EFD-C293-316F-00F4-761ED0535005</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<referredTableLongName>T_SCP_PSI_ONLINE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4FAA41DB-DC70-BB84-D5C7-61DE2E8F9CEB</referredTableID>
+<keyObject>39447835-97C5-284B-779E-BC6075A10A85</keyObject>
+<referredKeyID>39447835-97C5-284B-779E-BC6075A10A85</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_psicologo_on</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

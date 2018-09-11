@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ACAE69FE-82AD-E56D-91DB-9783AD6C4B51" containerWithKeyObject="C924DA72-8AFA-54E1-1183-FDB325BFBE22" localFKIndex="CCA36362-8F84-F45D-63EF-2072D26DA993" name="FK_SCP_ENDCO_VOL">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-30 12:18:23 UTC</createdTime>
+<generatorID>1FD24CF7-BAC4-C275-2376-CCE3E6E2459C</generatorID>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<referredTableLongName>T_SCP_VOLUNTARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7040C722-C46C-999B-9324-EE2A6D20B23F</referredTableID>
+<keyObject>9CD3009D-0947-E349-A3D0-D92C98E1995C</keyObject>
+<referredKeyID>9CD3009D-0947-E349-A3D0-D92C98E1995C</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>cd_voluntario</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

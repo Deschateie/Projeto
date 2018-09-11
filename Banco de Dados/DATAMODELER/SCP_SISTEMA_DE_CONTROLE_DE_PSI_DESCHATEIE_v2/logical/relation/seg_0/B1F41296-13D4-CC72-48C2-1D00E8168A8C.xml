@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PODE_SER_AVAL" directorySegmentName="seg_0" id="B1F41296-13D4-CC72-48C2-1D00E8168A8C">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2018-08-15 13:50:06 UTC</createdTime>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<engineerTo>
+<item key="F6AB5D53-4821-7678-6F27-B6BC5E73F171" value="true"/>
+</engineerTo>
+<sourcePk>AD4DB9BD-1053-6C4A-D598-D0F446BA7681</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1AB4B448-693D-5C3A-63D0-7C4D707A8B2B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EA36A27A-F43D-CFA1-A80F-6016EC092CD7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DEVE_SER_CONVERSA" directorySegmentName="seg_0" id="91CE2DFC-8C90-0B5B-76B7-619B16685E43">
+<createdBy>HioX</createdBy>
+<createdTime>2018-08-29 15:04:03 UTC</createdTime>
+<ownerDesignName>SCP_SISTEMA_DE_CONTROLE_DE_PSI_DESCHATEIE_v2</ownerDesignName>
+<engineerTo>
+<item key="F6AB5D53-4821-7678-6F27-B6BC5E73F171" value="true"/>
+</engineerTo>
+<targetPk>6195E742-8108-50CF-053F-B6DE70417FE2</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D187A67F-0B69-5B13-BBF3-4817477CBD6A</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>807C9FC2-6EAB-8510-9BFA-4CE8B84ECD17</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
