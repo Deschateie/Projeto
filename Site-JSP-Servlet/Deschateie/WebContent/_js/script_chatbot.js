@@ -40,9 +40,7 @@ function saveFileAnotation(msg){
 }
 
 
-/* ASSIM QUE A JANELA CARREGAR EXCUTA AS FUNÇÕES */
-window.onload = function(){
-	tabsFunction();
-}
 
+
+setTimeout(function(){ tabsFunction(); }, 1000);
 

@@ -7,4 +7,6 @@ $(document).ready(function(){
 	$('#celular').mask('(00) 00000-0000');
 	$('#crp').mask('#0');
 	$('#rg').mask('000.000.000-A', {reverse: true});
+	$('#dataNasc').mask('00/00/0000');	
+	$('#consultas').mask('##0');
 });

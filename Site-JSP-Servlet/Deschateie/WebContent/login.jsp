@@ -11,64 +11,84 @@
     <link rel="stylesheet" href="_css/estilo.css">
   </head>
   <body>
-	<%@ include file="navbar.jsp" %>
+	<%@ include file="WEB-INF/navbar.jsp" %>
 	<main>
 		<div class="is-widescreen form-main-content-login">
 			<div class="form-login">
 				<form action="realizarLogin" method="POST" class="form">
 					<h2 class="title-login">Realizar Login</h2>
 					<div class="form-group">
-						<input type="text" name="email" class="input-login" id="username-info" placeholder="Username...">
+						<input type="text" name="login" class="input-login" id="username-info" placeholder="Username...">
 					</div>
 					<div class="form-group">
 						<input type="password" name="senha" class="input-login" id="senha-info" placeholder="Senha...">
 					</div>
 					<button class="btn-submit-login">Logar</button>
+					<a class="recuperar-senha">Recuperar senha.</a>
 				</form>
 			</div>
 		</div>
 	</main>
 	<aside>
-		<div class="container">
 			<div class="aside-login">
-				<div class="aside-main-content-login">
-					<p>[ Algum conteudo aqui. ]</p>
+				<div class="aside-main-content-login" id="link-cadastro">
+					<div class="header-cadastro">
+						<h2>Poderá realizar o cadastro aqui mesmo!</h2>
+					</div>
+					<div class="formulario-cadastro-usuario">
+						<div class="titulo-cadastro-usuario">REALIZAR CADASTRO</div>
+						<div class="cadastro-usuario">
+							<form action="cadastrarUsuario" method="POST" class="form">
+								<div class="form-group">
+									<input type="text" class="input-login" placeholder="Nome completo" name="nome" required>
+								</div>
+								<div class="form-group">
+									<input type="email" class="input-login" placeholder="E-mail" name="email" required>
+								</div>
+								<div class="form-group">
+									<input type="text" id="dataNasc" class="input-login" placeholder="Data de nascimento" name="dataNasc" required>
+								</div>
+								<div class="form-group">
+									<input type="text" class="input-login" placeholder="Username" name="username" required>
+								</div>
+								<div class="form-group">
+									<input type="password" class="input-login" placeholder="Senha" name="senha" required>
+								</div>
+								<div class="form-group">
+									<input type="text" class="input-login" placeholder="Url Online de uma foto" name="foto" required>
+								</div>
+								<div class="form-group">
+									<select class="select-input" name="genero">
+										<option>Selecione seu gênero</option>
+										<option value="masculino">Masculino</option>
+										<option value="feminino">Feminino</option>
+										<option value="outros">Outros</option>
+									</select> 
+								</div>
+								<button class="btn-submit-login">Cadastrar</button>
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
 	</aside>
-	<footer>
-		<div class="container">
-			<div class="footer">
-				<div class="network">
-					<a href="#"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-facebook-messenger"></i></a>
-					<a href="#"><i class="fab fa-youtube"></i></a>
-				</div>
-				<div class="footer-menu">
-					<a href="catalogo.html">Catalogo</a>
-					<a href="page_especial_menor_idade.html">Pagina menor idade</a>
-					<a href="cadastro_usuario.html">Cadastre-se</a>
-				</div>
-			</div>
-		</div>
-		<div class="copyright">
-			<p>&copy; Todos dirietos reservados</p>
-		</div>
-		<div class="go_top">
-			<a href="#topo" class="go_top_menu">Topo</a>
-		</div>
-	</footer>
+	<%@ include file="WEB-INF/footer.jsp"%>
+	
+	<div class="go_cadastro">
+		<a href="#link-cadastro" class="go_form_cadastro">Cadastrar</a>
+	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.11/dist/sweetalert2.all.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.11/dist/sweetalert2.all.min.js"></script>
+	<script src="_js/jquery.mask.min.js"></script>
 	<script src="_js/script.js"></script>
+	<script src="_js/validaForm.js"></script>
 	<script src="_js/script_login.js"></script>
 	<%
-		if(request.getAttribute("erro") != null){
+		if(request.getAttribute("erro") != null || request.getAttribute("titulo") != null){
 	%>
-	<script> alerta("<%= request.getAttribute("erro").toString()%>", "Falha no login", "error") </script>
+	<script> alerta("<%= request.getAttribute("titulo").toString()%>", "<%= request.getAttribute("texto").toString()%>", "<%= request.getAttribute("status").toString()%>") </script>
 	<%
 	}
 	%>

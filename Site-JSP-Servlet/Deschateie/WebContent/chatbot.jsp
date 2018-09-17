@@ -14,7 +14,7 @@
   </head>
   <body>
 	<nav>
-		<div class="back"><a href="index.html"><i class="fas fa-angle-left"></i></a></div>
+		<div class="back"><a href="index.jsp"><i class="fas fa-angle-left"></i></a></div>
 	</nav>
 	<main>
 		<div class="main">
@@ -35,7 +35,7 @@
 										<div class="friends_message_text">
 											<div class="tabs-actions">
 											  <button class="tabs-button active">Descricao</button>
-											  <button class="tabs-button">@AnotaÃ§Ãµes</button>
+											  <button class="tabs-button">@Anotações</button>
 											</div>
 											<div class="friends_tabs" id="desc">
 												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore exercitationem, pariatur a nesciunt aliquid numquam laboriosam sint, atque, ut eaque nihil, cupiditate aut ratione quo ad doloremque reprehenderit sapiente odio?</p>
@@ -52,66 +52,21 @@
 							</div>
 						</div>
 					</div>
-					<div class="chat_log">
-						<div class="conteudo left">
-							<h3>[Nome] - [Apelido]</h3>
-							<p>[Message]</p>
-							<p class="time_log">11:30</p>
-						</div>
-						<div class="conteudo right">
-							<h3>[Nome] - [Apelido]</h3>
-							<p>[Message]</p>
-							<p class="time_log">11:30</p>
-						</div>
-						<div class="conteudo left">
-							<h3>[Nome] - [Apelido]</h3>
-							<p>[Message]</p>
-							<p class="time_log">11:30</p>
-						</div>
-						<div class="conteudo right">
-							<h3>[Nome] - [Apelido]</h3>
-							<p>[Message]</p>
-							<p class="time_log">11:30</p>
-						</div>
-						<div class="conteudo left">
-							<h3>[Nome] - [Apelido]</h3>
-							<p>[Message]</p>
-							<p class="time_log">11:30</p>
-						</div>
-						<div class="conteudo right">
-							<h3>[Nome] - [Apelido]</h3>
-							<p>[Message]</p>
-							<p class="time_log">11:30</p>
-						</div>
-						<div class="conteudo left">
-							<h3>[Nome] - [Apelido]</h3>
-							<p>[Message]</p>
-							<p class="time_log">11:30</p>
-						</div>
-						<div class="conteudo left">
-							<h3>[Nome] - [Apelido]</h3>
-							<p>[Message]</p>
-							<p class="time_log">11:30</p>
-						</div>
-						<div class="conteudo left">
-							<h3>[Nome] - [Apelido]</h3>
-							<p>[Message]</p>
-							<p class="time_log">11:30</p>
-						</div>
-					</div>
+					<div class="chat_log"></div>
 				</div>
 				<div class="control_chat">
 					<div class="input_message">
-						<input type="text" placeholder="Escreva...">
+						<input type="text" placeholder="Escreva..." id="question">
 					</div>
 					<div class="btn_submit">
-						<button type="submit">Enviar</button>
+						<button type="submit" id="sendQuestion">Enviar</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</main>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="_js/main.js"></script>
 	<script src="_js/fileSaver.js"></script>	
 	<script src="_js/script_chatbot.js"></script>
   </body>

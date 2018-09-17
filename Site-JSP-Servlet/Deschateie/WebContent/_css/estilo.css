@@ -18,6 +18,10 @@
 @import url("layouts/catalogo.css");
 /* Monitoramento das conversas (voluntario/psicologo) */
 @import url("layouts/monitoramento.css");
+/* Importando o CSS da home do Usuario padrão */
+@import url("layouts/home_usuario.css");
+/* Cadastro Paciente */
+@import url("layouts/cadastro_paciente.css");
 
 *{
 	margin: 0;
@@ -169,6 +173,15 @@
   background-repeat: no-repeat;
   color: #000;
   height: 60vh;
+}
+
+#setembro-amarelo{
+	background-image: url(../_img/banner_001.png); 
+  	background-repeat: no-repeat;
+  	background-size: contain;
+    background-position: top;
+  	color: #000;
+  	height: 60vh;
 }
 /*.slider2{
   background-size: cover;
@@ -385,8 +398,16 @@ label[for="btn_menu"]{
 }
 
 .tabs ul li .btn_sair{
-  background-color: lightcoral;
+	color: white !important;
+	background-color: lightcoral;
 }
+
+.tabs ul li .btn_sair:hover{
+	color: white !important;
+	background-color: lightpink;
+	border-bottom: 1px solid lightpink;
+}
+
 
 .tabs ul li .btn_cvs:hover{
   -webkit-transition: all .25s;
@@ -400,7 +421,6 @@ label[for="btn_menu"]{
 }
 
 footer {
-  bottom:0;
   width:100%;
 }
 
@@ -476,6 +496,17 @@ footer {
   justify-content: center;
 }
 
+.go_cadastro{
+	position: fixed;
+	left: 0;
+	top: 50%;
+  	width: 7em;
+ 	margin-top: 20%;
+  	background-color: lightcoral;
+  	color: #fff;
+  	padding: 15px;
+}
+
 .go_top{
   position: fixed;
   right: 0;
@@ -487,7 +518,7 @@ footer {
   padding: 15px;
 }
 
-.go_top a{
+.go_top a, .go_cadastro a{
   width: 100%;
   color: #fff;
 }
